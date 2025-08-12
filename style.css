@@ -1,82 +1,69 @@
+
 /* === Base Styles === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #0f0f10;
   color: #f5f5f5;
   line-height: 1.6;
 }
-
 h1, h2, h3 {
   font-weight: 700;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
+/* === Section Wrapper === */
+.section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1a1a1d;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+}
 /* === Hero Section === */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 2rem;
-  background: linear-gradient(135deg, #0f0f10, #1a1a1d);
-}
-
-.hero-inner {
-  display: flex;
-  align-items: center;
   gap: 2rem;
-  max-width: 1100px;
-  width: 100%;
   flex-wrap: wrap;
 }
-
-/* Profile Photo */
 .hero-thumb {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   border: 5px solid #00ffcc;
   object-fit: cover;
   box-shadow: 0 0 25px rgba(0, 255, 204, 0.5);
   transition: transform 0.3s ease;
 }
-
 .hero-thumb:hover {
   transform: scale(1.05);
 }
-
 .hero-left {
   flex: 1;
 }
-
 .hero-left h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #00ffcc;
 }
-
 .lead {
   margin-top: 1rem;
   font-size: 1.2rem;
   color: #bbb;
 }
-
 .cta-row {
   margin-top: 1.5rem;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
 }
-
 .btn {
   padding: 0.7rem 1.2rem;
   border-radius: 25px;
@@ -84,29 +71,85 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .btn-primary {
   background: #00ffcc;
   color: #0f0f10;
 }
-
 .btn-primary:hover {
   background: #00e6b8;
 }
-
 .btn-outline {
   border: 2px solid #00ffcc;
   color: #00ffcc;
   background: transparent;
 }
-
 .btn-outline:hover {
   background: #00ffcc;
   color: #0f0f10;
 }
-
+/* === Skills Section === */
+.skills {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
 .skill-pill {
-  background: #1a1a1d;
+  background: #262629;
   border: 1px solid #00ffcc;
   padding: 0.4rem 0.8rem;
   border-radius: 15px;
+  font-size: 0.85rem;
+}
+/* === Portfolio Grid === */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #262629;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.meta {
+  padding: 1rem;
+}
+/* === Contact Form === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #262629;
+  color: #f5f5f5;
+}
+button[type="submit"] {
+  background: #00ffcc;
+  border: none;
+  color: #0f0f10;
+  font-weight: 600;
+}
+button[type="submit"]:hover {
+  background: #00e6b8;
+}
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1d;
+  margin-top: 2rem;
+  color: #888;
+}

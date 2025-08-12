@@ -1,94 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Golakoti — Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Golakoti - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="profile-pic">
-                <img src="profile.jpg" alt="Sai Golakoti">
-            </div>
-            <h1>SAI GOLAKOTI</h1>
-            <p class="tagline">Graphic Designer • Video Editor — Crafting memorable visuals and seamless edits.</p>
-            <div class="buttons">
-                <a href="#work" class="btn">View Work</a>
-                <a href="mailto:youremail@example.com" class="btn btn-alt">Hire Me</a>
-            </div>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <section class="section hero">
+    <img src="profile.jpg" alt="Sai Golakoti" class="hero-thumb" />
+    <div class="hero-left">
+      <h1>Sai Golakoti</h1>
+      <p class="lead">Graphic Designer • Video Editor — I craft memorable visuals and seamless edits.</p>
+      <div class="cta-row">
+        <a href="#portfolio" class="btn btn-primary">View Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="about">
-        <div class="container">
-            <h2>About</h2>
-            <p>Hello! I'm a passionate graphic designer and video editor focused on creating polished visuals for brands, short films, and social platforms.</p>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill-pill">Graphic Design</span>
+      <span class="skill-pill">Video Editing</span>
+      <span class="skill-pill">Motion Graphics</span>
+      <span class="skill-pill">Adobe Photoshop</span>
+      <span class="skill-pill">Premiere Pro</span>
+      <span class="skill-pill">After Effects</span>
+    </div>
+  </section>
 
-    <section class="services">
-        <div class="container">
-            <h2>What I Do</h2>
-            <ul>
-                <li>🎬 Video editing & color grading</li>
-                <li>🎨 Motion graphics & compositing</li>
-                <li>🖌 Retouching & concept visuals</li>
-                <li>📱 Social media edits</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Portfolio Section -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <img src="work1.jpg" alt="Work Sample" />
+        <div class="meta"><h3>Project Title</h3></div>
+      </div>
+      <div class="card">
+        <img src="work2.jpg" alt="Work Sample" />
+        <div class="meta"><h3>Project Title</h3></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="stats">
-        <div class="container">
-            <div class="stat">
-                <h3>54+</h3>
-                <p>Projects</p>
-            </div>
-            <div class="stat">
-                <h3>3+ Years</h3>
-                <p>Experience</p>
-            </div>
-            <div class="stat">
-                <h3>Freelance</h3>
-                <p>Availability</p>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <section class="work" id="work">
-        <div class="container">
-            <h2>Selected Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <img src="work1.jpg" alt="Short Film Montage">
-                    <p>Short Film Montage</p>
-                </div>
-                <div class="work-item">
-                    <img src="work2.jpg" alt="Poster & Image Manipulation">
-                    <p>Poster & Image Manipulation</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Project details"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Sai Golakoti — Portfolio</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sai Golakoti. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
