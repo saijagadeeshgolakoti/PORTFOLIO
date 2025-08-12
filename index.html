@@ -1,97 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sai Golakoti — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Golakoti — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="eyebrow">PRESENTING</div>
-        <h1>SAI GOLAKOTI</h1>
-        <p class="lead">Graphic Designer • Video Editor — I craft memorable visuals and seamless edits.</p>
-        <div class="cta-row">
-          <button class="btn btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View Work</button>
-          <a class="btn btn-outline" href="#contact">Hire Me</a>
-          <span class="skill-pill">Photoshop</span>
-          <span class="skill-pill">After Effects</span>
-          <span class="skill-pill">Premiere Pro</span>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>SAI GOLAKOTI</h1>
+            <p class="subtitle">Graphic Designer • Video Editor — I craft memorable visuals and seamless edits.</p>
+            <div class="buttons">
+                <a href="#work" class="btn">View Work</a>
+                <a href="#contact" class="btn secondary">Hire Me</a>
+            </div>
         </div>
-      </div>
-      <div class="hero-right">
-        <img class="hero-thumb" src="sai golakoti.jpg" alt="Sai Golakoti — hero thumbnail">
-      </div>
-    </div>
-  </header>
+        <img src="sai-golakoti.jpg" alt="Sai Golakoti" class="hero-img">
+    </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <div class="two-col">
-        <div>
-          <p class="muted">Hello! I'm a passionate graphic designer and video editor focused on creating polished visuals for brands, short films and social platforms.</p>
-          <h3>What I do</h3>
-          <ul class="muted">
-            <li>Video editing & color grading</li>
-            <li>Motion graphics & compositing</li>
-            <li>Retouching & concept visuals</li>
-            <li>Social media edits</li>
-          </ul>
-        </div>
-        <aside class="contact-card">
-          <strong>Quick Stats</strong>
-          <div class="muted">Projects: <strong>54</strong></div>
-          <div class="muted">Experience: <strong>3+ Years</strong></div>
-          <div class="muted">Available: <strong>Freelance</strong></div>
-          <a href="#contact"><button class="btn btn-primary">Let's talk</button></a>
-        </aside>
-      </div>
+    <section class="about" id="about">
+        <h2>About</h2>
+        <p>Hello! I'm a passionate graphic designer and video editor focused on creating polished visuals for brands, short films and social platforms.</p>
     </section>
 
-    <section id="portfolio">
-      <h2>Selected Work</h2>
-      <div class="portfolio-grid">
-        <div class="card" data-type="video" data-src="example1.mp4" onclick="openModal(this)">
-          <img src="sai golakoti.jpg" alt="video thumb">
-          <div class="meta">
-            <div>Short Film Montage</div>
-            <div class="muted">Color grade, continuity edit</div>
-          </div>
-        </div>
-        <div class="card" data-type="image" data-src="sai golakoti.jpg" onclick="openModal(this)">
-          <img src="sai golakoti.jpg" alt="image thumb">
-          <div class="meta">
-            <div>Poster & Image Manipulation</div>
-            <div class="muted">Retouching and color work</div>
-          </div>
-        </div>
-      </div>
+    <section class="skills" id="skills">
+        <h2>What I Do</h2>
+        <ul>
+            <li>🎬 Video editing & color grading</li>
+            <li>🎨 Motion graphics & compositing</li>
+            <li>🖌 Retouching & concept visuals</li>
+            <li>📱 Social media edits</li>
+        </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <form onsubmit="event.preventDefault(); alert('Replace with real contact handler');">
-        <input required placeholder="Your name">
-        <input required type="email" placeholder="Email">
-        <textarea required placeholder="Project details"></textarea>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-      </form>
+    <section class="stats">
+        <div>📂 Projects: <strong>54</strong></div>
+        <div>⏳ Experience: <strong>3+ Years</strong></div>
+        <div>✅ Available: <strong>Freelance</strong></div>
     </section>
-  </main>
 
-  <footer>© Sai Golakoti — Portfolio</footer>
+    <section class="work" id="work">
+        <h2>Selected Work</h2>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="video-thumb.jpg" alt="Short Film Montage">
+                <p>Short Film Montage — Color grading & continuity edit</p>
+            </div>
+            <div class="work-item">
+                <img src="image-thumb.jpg" alt="Poster Manipulation">
+                <p>Poster & Image Manipulation — Retouching and color work</p>
+            </div>
+        </div>
+    </section>
 
-  <div id="lightbox" class="modal">
-    <div class="modal-content">
-      <button class="close-btn" onclick="closeModal()">✕</button>
-      <div id="mediaWrapper"></div>
-    </div>
-  </div>
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Project details"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2025 Sai Golakoti — Portfolio</p>
+    </footer>
 </body>
 </html>
