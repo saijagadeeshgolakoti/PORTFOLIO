@@ -1,69 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
 }
 
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  flex-wrap: wrap;
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 2rem 0;
 }
 
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
-.hero-text {
-  max-width: 600px;
+h1 {
+    font-size: 2.5rem;
 }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.tagline {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1rem;
 }
 
-.hero-text p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 20px;
+.buttons {
+    margin-top: 1rem;
 }
 
-.hero-buttons .btn {
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-right: 10px;
-  border-radius: 25px;
-  background: #ff7e5f;
-  color: white;
-  transition: 0.3s;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: white;
+    color: #2575fc;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
-.hero-buttons .btn:hover {
-  background: #eb5d3c;
+.btn-alt {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
-.hero-buttons .btn-outline {
-  background: transparent;
-  border: 2px solid #ff7e5f;
-  color: #ff7e5f;
+/* Sections */
+section {
+    padding: 2rem 0;
 }
 
-.hero-buttons .btn-outline:hover {
-  background: #ff7e5f;
-  color: white;
+h2 {
+    margin-bottom: 1rem;
+    color: #2575fc;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: white;
+    margin: 0.5rem auto;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 1rem 0;
+}
+
+.stat {
+    margin: 0 20px;
+}
+
+.stat h3 {
+    font-size: 1.5rem;
+    color: #2575fc;
+}
+
+/* Work */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.work-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.work-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
