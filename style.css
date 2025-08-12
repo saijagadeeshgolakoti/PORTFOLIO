@@ -1,4 +1,4 @@
-/* ==== Base Styles ==== */
+/* === Base Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +7,13 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #0f0f0f;
+  background-color: #0f0f10;
   color: #f5f5f5;
   line-height: 1.6;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 h1, h2, h3 {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 a {
@@ -26,219 +21,92 @@ a {
   color: inherit;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* ==== Hero Section ==== */
+/* === Hero Section === */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0;
-  flex-wrap: wrap;
-  background: linear-gradient(135deg, #1e1e1e, #000);
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f0f10, #1a1a1d);
 }
 
 .hero-inner {
   display: flex;
   align-items: center;
   gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
   flex-wrap: wrap;
 }
 
-.hero-left {
-  flex: 1 1 400px;
-}
-
-.hero-left h1 {
-  font-size: 2.8rem;
-  color: #00ffc6;
-}
-
-.hero-left p {
-  margin: 1rem 0;
-  color: #ccc;
-  font-size: 1.1rem;
-}
-
-.cta-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 1.2rem;
-}
-
-.skill-pill {
-  background: #00ffc6;
-  color: #000;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.hero-right {
-  flex: 1 1 250px;
-  display: flex;
-  justify-content: center;
-}
-
+/* Profile Photo */
 .hero-thumb {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  border: 5px solid #00ffcc;
   object-fit: cover;
-  border: 4px solid #00ffc6;
-  box-shadow: 0 0 20px rgba(0, 255, 198, 0.4);
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.5);
+  transition: transform 0.3s ease;
 }
 
-/* ==== Buttons ==== */
+.hero-thumb:hover {
+  transform: scale(1.05);
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  color: #00ffcc;
+}
+
+.lead {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.cta-row {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .btn {
-  padding: 0.6rem 1.2rem;
-  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
   cursor: pointer;
-  border-radius: 30px;
-  font-size: 0.95rem;
   transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background: #00ffc6;
-  color: #000;
-  font-weight: 700;
+  background: #00ffcc;
+  color: #0f0f10;
 }
 
 .btn-primary:hover {
-  background: #00d4a9;
+  background: #00e6b8;
 }
 
 .btn-outline {
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
   background: transparent;
-  border: 2px solid #00ffc6;
-  color: #00ffc6;
 }
 
 .btn-outline:hover {
-  background: #00ffc6;
-  color: #000;
+  background: #00ffcc;
+  color: #0f0f10;
 }
 
-/* ==== Section Titles ==== */
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
-  color: #00ffc6;
-}
-
-/* ==== About Section ==== */
-.two-col {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.muted {
-  color: #aaa;
-}
-
-.contact-card {
-  background: #1a1a1a;
-  padding: 1.5rem;
-  border-radius: 12px;
-  flex: 1;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-/* ==== Portfolio Grid ==== */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  display: block;
-}
-
-.meta {
-  padding: 0.8rem;
-}
-
-/* ==== Contact Form ==== */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-form input, form textarea {
-  padding: 0.8rem;
-  border: none;
-  border-radius: 8px;
-  background: #1e1e1e;
-  color: #fff;
-}
-
-form button {
-  align-self: start;
-}
-
-/* ==== Footer ==== */
-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  background: #111;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-/* ==== Modal ==== */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal.active {
-  display: flex;
-}
-
-.modal-content {
-  background: #111;
-  padding: 1rem;
-  border-radius: 12px;
-  max-width: 90%;
-}
-
-.close-btn {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-}
+.skill-pill {
+  background: #1a1a1d;
+  border: 1px solid #00ffcc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
